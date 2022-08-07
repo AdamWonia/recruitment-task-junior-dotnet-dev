@@ -6,7 +6,7 @@ The task is about making an ASP.NET MVC webpage that displays a text field, a bu
 In the text field you should be able to enter an integer array in the format "[x,y,z]".
 
 After pressing the button process input in the back-end and then label should display:
- 1. If input format is incorrect => an error message
+ 1. If input format is incorrect => an error message.
  2. If input format is correct => <br>
      a) numbers repeated at least 3 times in the input array in format "[x,y]".
         Those numbers should have descending order. <br>
