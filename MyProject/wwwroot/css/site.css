@@ -1,0 +1,23 @@
+﻿.div-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: solid 1px black;
+}
+
+.div-center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+input {
+    border: solid 1px black;
+}

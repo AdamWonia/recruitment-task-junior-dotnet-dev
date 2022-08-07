@@ -1,0 +1,20 @@
+﻿@model MyProject.Models.TaskModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="div-center">
+    @using (Html.BeginForm("GetMatrix", "Home", FormMethod.Post))
+    {
+        @Html.TextBoxFor(model => model.Matrix)
+        <button type="submit">Click</button>
+    }
+
+    @if (@Html.ValueFor(model => model.Matrix).Length > 0){
+        <p>@Html.DisplayFor(model => model.Matrix)</p>
+    }
+    else{
+        <h4>Output</h4>
+    }
+</div>
