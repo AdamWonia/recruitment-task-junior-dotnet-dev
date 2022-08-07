@@ -7,10 +7,10 @@ In the text field you should be able to enter an integer array in the format "[x
 
 After pressing the button process input in the back-end and then label should display:
  1. If input format is incorrect => an error message
- 2. If input format is correct =>
+ 2. If input format is correct => <br>
      a) numbers repeated at least 3 times in the input array in format "[x,y]".
-         Those numbers should have descending order.
-    b) "[]" if none is repeated.
+        Those numbers should have descending order. <br>
+     b) "[]" if none is repeated.
 
 Example i/o:
 1. input: [1,2,3,4,5,1,1] output: [1]
