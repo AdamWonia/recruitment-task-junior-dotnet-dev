@@ -14,15 +14,15 @@ namespace MyProject.Controllers
 
         public ActionResult GetMatrix(TaskModel model)
         {
-            // Convert input format like "[1,2,3]" to string[] array {"1", "2", "3"}
-            string[] inputData = model.Matrix
+            try
+            {
+                // Convert input format like "[1,2,3]" to string[] array {"1", "2", "3"}
+                string[] inputData = model.Matrix
                 .Replace(" ", string.Empty)
                 .Replace("[", string.Empty)
                 .Replace("]", string.Empty)
                 .Split(",");
 
-            try
-            {
                 // Try to convert 'inputData' into int[] array
                 int[] inputNumbers = inputData
                     .Select(item => Convert.ToInt32(item))
